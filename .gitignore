@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Production build output
+dist/
+
+# Local data cache (since Vercel builds it dynamically now)
+data.js
+
+# OS Metadata
+.DS_Store
+Thumbs.db
