@@ -1,4 +1,4 @@
-# D2C Consumer Need-Gap Finder
+# D2C Need-Gap Intelligence Platform
 
 An interactive, data-driven R&D dashboard built for D2C product development teams to map and analyze unmet consumer needs across competitor brands. It parses 6,000 reviews across 14 major Indian D2C competitor brands to pinpoint specific product development opportunities.
 
