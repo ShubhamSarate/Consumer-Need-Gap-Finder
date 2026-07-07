@@ -472,6 +472,16 @@ function initTabs() {
     function switchTab(targetTab) {
         state.activeTab = targetTab;
         
+        // Toggle wide-layout class on app container for more spacious view in category deep-dive
+        const container = document.querySelector('.app-container');
+        if (container) {
+            if (targetTab === 'category') {
+                container.classList.add('wide-layout');
+            } else {
+                container.classList.remove('wide-layout');
+            }
+        }
+        
         // Update buttons styling
         [tabOverviewBtn, tabCategoryBtn, tabBlueprintBtn].forEach(btn => {
             btn.classList.remove('active');
