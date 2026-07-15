@@ -1427,46 +1427,221 @@ h2 {
         --border-glass: #d1d5db !important;
         --accent: #0f766e !important;
         --primary: #4338ca !important;
+        --status-danger: #b91c1c !important;
+        --status-warning: #c2410c !important;
+        --status-success: #047857 !important;
     }
+    
+    @page {
+        size: A4 portrait;
+        margin: 0;
+    }
+    
     body {
         background: #ffffff !important;
         color: #0b0f19 !important;
+        font-family: var(--font-body);
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        font-size: 12px !important;
+        line-height: 1.4 !important;
+        padding: 10mm !important;
+        box-sizing: border-box !important;
     }
+    
     .app-container {
-        padding: 0;
+        padding: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
     }
+    
     .main-header, .control-bar, .main-footer, .blueprint-sidebar {
         display: none !important;
     }
+    
     .blueprint-container {
-        grid-template-columns: 1fr;
+        display: block !important;
+        grid-template-columns: 1fr !important;
+        page-break-inside: avoid !important;
     }
+    
+    /* Document Container Frame */
     .blueprint-detail {
         background: #ffffff !important;
-        border: none !important;
+        border: 2px solid #0f172a !important;
+        border-radius: 8px !important;
         box-shadow: none !important;
         color: #0b0f19 !important;
-        padding: 0 !important;
+        padding: 16px 20px !important;
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 10px !important;
+        min-height: auto !important;
+        page-break-inside: avoid !important;
     }
+    
+    /* Running Header & Footer */
+    .blueprint-detail::before {
+        content: "D2C NEED-GAP INTELLIGENCE PLATFORM  •  R&D PROPOSAL BRIEF";
+        display: block;
+        font-family: var(--font-heading);
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color: #64748b;
+        border-bottom: 1px solid #e2e8f0;
+        padding-bottom: 6px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .blueprint-detail::after {
+        content: "CONFIDENTIAL — INTERNAL R&D USE ONLY  •  GENERATED VIA MOSAIC FELLOWSHIP ANALYTICS";
+        display: block;
+        font-family: var(--font-heading);
+        font-size: 0.62rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: #94a3b8;
+        border-top: 1px solid #e2e8f0;
+        padding-top: 6px;
+        margin-top: 12px;
+        text-align: center;
+    }
+    
     .proposal-header {
-        border-bottom: 2px solid #0b0f19;
+        border-bottom: 1.5px solid #0f172a !important;
+        padding-bottom: 8px !important;
+        margin-bottom: 8px !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
     }
-    .proposal-opp-badge {
-        background: #0b0f19 !important;
-        color: #ffffff !important;
+    
+    .proposal-title-area h2 {
+        font-family: var(--font-heading);
+        font-size: 1.35rem !important;
+        font-weight: 800 !important;
+        color: #0f172a !important;
+        margin-bottom: 2px !important;
     }
+    
+    .proposal-title-area .panel-desc {
+        font-size: 0.78rem !important;
+        color: #475569 !important;
+    }
+    
     .proposal-category-pill {
-        border: 1px solid #0b0f19 !important;
-        color: #0b0f19 !important;
+        border: 1px solid #4338ca !important;
+        background: #e0e7ff !important;
+        color: #4338ca !important;
+        font-weight: 700 !important;
+        font-size: 0.65rem !important;
+        padding: 2px 6px !important;
+        border-radius: 4px !important;
     }
+    
+    .proposal-opp-badge {
+        background: #ccfbf1 !important;
+        border: 1px solid #0f766e !important;
+        color: #0f766e !important;
+        box-shadow: none !important;
+        font-weight: 700 !important;
+        font-size: 0.72rem !important;
+        padding: 3px 8px !important;
+    }
+    
+    /* Layout Grid */
+    .proposal-grid {
+        display: grid !important;
+        grid-template-columns: 1.35fr 1fr !important;
+        gap: 16px !important;
+    }
+    
+    .proposal-main-content {
+        gap: 10px !important;
+    }
+    
+    /* Card blocks for sections */
+    .proposal-section {
+        border: 1px solid #cbd5e1 !important;
+        border-radius: 6px !important;
+        padding: 8px 12px !important;
+        background: #f8fafc !important;
+        page-break-inside: avoid !important;
+    }
+    
     .proposal-section h4 {
-        border-left: 2px solid #0f766e !important;
+        border-left: 3px solid #0f766e !important;
+        color: #0f172a !important;
+        font-size: 0.8rem !important;
+        font-weight: 700 !important;
+        padding-left: 6px !important;
+        margin-bottom: 4px !important;
+    }
+    
+    .proposal-section p {
+        font-size: 0.76rem !important;
+        color: #334155 !important;
+        line-height: 1.4 !important;
+    }
+    
+    .bullet-list {
+        gap: 3px !important;
+    }
+    
+    .bullet-list li {
+        font-size: 0.74rem !important;
+        color: #334155 !important;
+        line-height: 1.35 !important;
+    }
+    
+    .bullet-list li::before {
         color: #0f766e !important;
     }
+    
+    /* Sidebar / Validation Metrics styling */
     .proposal-sidebar-content {
-        background: #f3f4f6 !important;
-        border: 1px solid #d1d5db !important;
+        background: #f8fafc !important;
+        border: 1.5px solid #0f766e !important;
+        border-radius: 6px !important;
+        padding: 12px 14px !important;
+        height: fit-content !important;
+        page-break-inside: avoid !important;
     }
+    
+    .market-justification-card h4 {
+        color: #0f766e !important;
+        font-size: 0.85rem !important;
+        font-weight: 700 !important;
+        border-bottom: 1.5px solid #cbd5e1 !important;
+        padding-bottom: 6px !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .justification-item {
+        border-bottom: 1px solid #cbd5e1 !important;
+        padding-bottom: 6px !important;
+        padding-top: 6px !important;
+    }
+    
+    .justification-label {
+        color: #475569 !important;
+        font-weight: 500 !important;
+        font-size: 0.74rem !important;
+    }
+    
+    .justification-val {
+        color: #0f172a !important;
+        font-weight: 700 !important;
+        font-size: 0.76rem !important;
+    }
+    
+    .justification-val.vuln-high {
+        color: #b91c1c !important;
+    }
+    
     .btn-primary {
         display: none !important;
     }
