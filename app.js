@@ -227,6 +227,226 @@ const BLUEPRINT_IDEAS = [
             "Month 5: FDA label filing and final eco-friendly tube packaging production.",
             "Month 6: Launch on Nykaa and Brand Website."
         ]
+    },
+    {
+        id: "skincare_result_tracking",
+        title: "ChronoSkin Active Progress Kit",
+        category: "Skin Care",
+        unmetNeed: "result_tracking",
+        competitor: "Derma Co",
+        conceptName: "ChronoSkin 4-Week Progress System",
+        painPoint: "Derma Co customers complain about not knowing if active skin serums are working over time, lacking clear visual progress tracking tools.",
+        objective: "Provide a clinical skincare serum bundled with weekly skin indicator strips and a visual progress journal.",
+        specs: [
+            "Weekly Progress Strips: 4 color-matching indicator strips to test sebum levels and skin barrier hydration weekly.",
+            "Visual Journal: High-contrast weekly photo guide to track hyperpigmentation and texture improvements.",
+            "Formula: 10% Niacinamide + 2% Arbutin stabilized with Zinc PCA for pore refinement.",
+            "Safety: pH 5.5 skin-identical formula tested for sensitive skin compatibility."
+        ],
+        timeline: [
+            "Months 1-2: Indicator strip calibration and formula stability testing.",
+            "Month 3: Progress journal UX layout design and print production.",
+            "Months 4-5: 4-week clinical user trials with weekly photo verification.",
+            "Month 6: D2C product launch with digital skin tracking web app."
+        ]
+    },
+    {
+        id: "haircare_personalization",
+        title: "CustomFit Adaptive Hair Oil",
+        category: "Hair Care",
+        unmetNeed: "personalization_demand",
+        competitor: "Indulekha",
+        conceptName: "CustomFit Tailored Scalp & Hair Formula",
+        painPoint: "Indulekha users report frustration with generic, one-size-fits-all heavy hair oils that don't match specific hair porosity or scalp types.",
+        objective: "Launch a custom-blended hair oil system tailored through a 6-question online scalp and porosity diagnostic.",
+        specs: [
+            "Diagnostic Quiz: Online quiz adjusting base oil viscosity (light almond vs. rich sesame) based on scalp oiliness.",
+            "Custom Active Boosters: Choice of 2 active herbal extracts (e.g. Rosemary for growth, Tea Tree for scalp balance).",
+            "Self-Dosing Comb Cap: Patented comb applicator cap with adjustable flow rate.",
+            "Transparency: Batch label printed with owner's name and exact custom formulation date."
+        ],
+        timeline: [
+            "Months 1-2: Micro-blending lab setup and viscosity optimization for thin vs thick hair.",
+            "Month 3: Online diagnostic quiz development and shopify integration.",
+            "Month 4: Small batch trials across 200 custom profile testers.",
+            "Month 5-6: Official launch with automated custom blending line."
+        ]
+    },
+    {
+        id: "skincare_efficacy_timeline",
+        title: "Clinical Timeline 28-Day Series",
+        category: "Skin Care",
+        unmetNeed: "efficacy_timeline",
+        competitor: "Minimalist",
+        conceptName: "Clinical Timeline 28-Day Renewal Series",
+        painPoint: "Minimalist users express disappointment with slow results, lacking explicit day-by-day timelines for visible changes.",
+        objective: "Develop an active serum featuring a transparent 28-day clinical results timeline printed on the outer package.",
+        specs: [
+            "Day-by-Day Timeline: Front panel clearly outlines: Day 3 Hydration, Day 14 Texture, Day 28 Tone Evening.",
+            "Controlled Active Concentration: Encapsulated Retinol (0.3%) for slow release to prevent early peeling.",
+            "Dose Indicator: Markings on glass bottle showing recommended weekly consumption level.",
+            "Clinical Proof: Backed by 50-subject clinical trial data included inside outer carton."
+        ],
+        timeline: [
+            "Months 1-2: Encapsulation stability and multi-phase clinical trial design.",
+            "Months 3-4: 28-day efficacy clinical trial execution and data analysis.",
+            "Month 5: Box artwork printing with verified trial curves.",
+            "Month 6: D2C Website launch with interactive day-by-day customer review gallery."
+        ]
+    },
+    {
+        id: "skincare_value_concentrate",
+        title: "MaxConcentrate Eco-Value Serum",
+        category: "Skin Care",
+        unmetNeed: "price_value_mismatch",
+        competitor: "Foxtale",
+        conceptName: "MaxConcentrate 100ml Value Refill",
+        painPoint: "Foxtale customers feel prices are inflated for tiny 30ml bottles that run out in under two weeks.",
+        objective: "Formulate an ultra-concentrated 100ml value-size serum that delivers 3x longer usage at half cost-per-ml.",
+        specs: [
+            "3x Size Container: 100ml amber glass bottle delivering 120 days of daily application.",
+            "Concentrated Dropper: Double-strength formula requiring only 2 drops per application.",
+            "Cost Efficiency: 45% lower packaging overhead passed directly to consumer savings.",
+            "Zero Waste Refill: Refill aluminum bottles available at 25% discount."
+        ],
+        timeline: [
+            "Months 1-2: Formula concentration stability testing and bulk glass sourcing.",
+            "Month 3: Unit economics optimization and packaging design.",
+            "Month 4-5: Bulk batch manufacturing run.",
+            "Month 6: National launch promoting 'Smart Skincare Value'."
+        ]
+    },
+    {
+        id: "skincare_bio_buffer",
+        title: "PhytoShield Calming Active Serum",
+        category: "Skin Care",
+        unmetNeed: "side_effect_concern",
+        competitor: "Dr Sheths",
+        conceptName: "PhytoShield Soothing Active Buffer",
+        painPoint: "Dr Sheths reviews cite high incidence of redness, skin burning, and breakouts from high-strength unbuffered acids.",
+        objective: "Pair high-potency exfoliants with Centella Asiatica bio-buffers to eliminate irritation and burning risks.",
+        specs: [
+            "5% PHA + 2% Salicylic Acid buffered with 65% Centella Asiatica extract base.",
+            "Dermatologist Approved: 0% burning or stinging reported in sensitive skin trials.",
+            "Barrier Repair: Infused with 5 essential ceramides to rebuild skin barrier simultaneously.",
+            "Fragrance-Free & Alcohol-Free: Formulated without drying alcohols or essential oils."
+        ],
+        timeline: [
+            "Months 1-2: Buffering ratio optimization and patch testing on reactive skin.",
+            "Month 3: Clinical hypo-irritation trials under dermatological oversight.",
+            "Months 4-5: Stability testing and secondary barrier restoration verification.",
+            "Month 6: Direct launch targeting sensitive active skincare users."
+        ]
+    },
+    {
+        id: "skincare_climate_adaptor",
+        title: "Dual-Action Climate Moisturizer",
+        category: "Skin Care",
+        unmetNeed: "skin_type_mismatch",
+        competitor: "Plum",
+        conceptName: "Dual-Action Humidity Adaptor Gel",
+        painPoint: "Plum customers with combination skin complain that generic moisturizers leave T-zones greasy while cheeks stay dry.",
+        objective: "Engineer a smart gel-cream that regulates sebum in humid T-zones while deeply hydrating dry cheek areas.",
+        specs: [
+            "Adaptive Moisture Matrix: Polymer network that absorbs excess sebum in oil-prone zones.",
+            "Hydration Locking: Micro-encapsulated Hyaluronic Acid for targeted delivery to dry areas.",
+            "Non-Comedogenic: Certified non-pore-clogging formula tested in high-humidity chambers.",
+            "Texture: Featherlight water-gel that absorbs in under 15 seconds without stickiness."
+        ],
+        timeline: [
+            "Months 1-2: Climate chamber testing under 80% humidity conditions.",
+            "Month 3: Sebum-absorption clinical panel testing.",
+            "Months 4-5: Packaging in airless pump containers to preserve matrix integrity.",
+            "Month 6: Summer launch campaign."
+        ]
+    },
+    {
+        id: "supplements_dosage_control",
+        title: "PreDose Metered Hair Growth Tonic",
+        category: "Hair Care",
+        unmetNeed: "dosage_confusion",
+        competitor: "WishCare",
+        conceptName: "PreDose Auto-Meter Precision Tonic",
+        painPoint: "WishCare users struggle with vague dosage guidelines ('apply a few drops'), leading to wasted product and scalp buildup.",
+        objective: "Develop a precision hair growth tonic with an auto-loading cap that draws exactly 1ml per application.",
+        specs: [
+            "Auto-Metering Cap: Mechanical cap that automatically fills 1.0ml dose upon twisting open.",
+            "Scalp Precision Nozzle: Narrow glass tip for direct application to scalp roots.",
+            "Formula: 3% Redensyl + 2% Anagain in non-sticky aqueous vehicle.",
+            "Usage Counter: Graduated side panel window showing remaining 30-day doses."
+        ],
+        timeline: [
+            "Months 1-2: Precision metering cap tooling and fluid dynamics testing.",
+            "Month 3: Scalp absorption and non-greasy formula trials.",
+            "Month 4: Packaging assembly and 30-dose accuracy verification.",
+            "Months 5-6: Commercial launch with dosage tutorial videos."
+        ]
+    },
+    {
+        id: "bodycare_zero_waste",
+        title: "ZeroWaste Aluminum Body Wash",
+        category: "Body Care",
+        unmetNeed: "packaging_sustainability",
+        competitor: "Mcaffeine",
+        conceptName: "ZeroWaste Infinitely Recyclable Wash",
+        painPoint: "Mcaffeine customers express guilt over plastic packaging waste and non-recyclable pump dispensers.",
+        objective: "Launch a premium body wash packaged in infinitely recyclable aluminum bottles with compostable refill pouches.",
+        specs: [
+            "Aluminum Vessel: 100% rust-proof, brushed aluminum bottle built for lifelong bathroom use.",
+            "Compostable Pouches: Refills delivered in kraft paper pouches coated with home-compostable PLA.",
+            "Formula: Sulfate-free coconut-derived wash with natural coffee extract upcycled from coffee grounds.",
+            "Zero Single-Use Plastic: Metallic screw cap with optional reusable stainless-steel pump."
+        ],
+        timeline: [
+            "Months 1-2: Aluminum internal lining compatibility testing for shower longevity.",
+            "Month 3: Home-compostability certification for refill pouches.",
+            "Months 4-5: Sourcing upcycled coffee grounds from local roasters.",
+            "Month 6: Launch on Eco-Marketplaces and D2C site."
+        ]
+    },
+    {
+        id: "bodycare_fragrance_free",
+        title: "PureScent Fragrance-Free Lotion",
+        category: "Body Care",
+        unmetNeed: "fragrance_sensitivity",
+        competitor: "Chemists at Play",
+        conceptName: "PureScent 100% Fragrance-Free Butter",
+        painPoint: "Chemists at Play body products generate complaints from users sensitive to heavy synthetic fragrances and essential oils.",
+        objective: "Create a 100% fragrance-free, essential-oil-free body butter tailored for eczema-prone and sensitive skin.",
+        specs: [
+            "0% Fragrance: Zero synthetic perfumes, zero essential oils, and zero masking agents.",
+            "Deodorized Raw Ingredients: Cold-processed shea butter steam-purified to remove natural pungent odor.",
+            "Barrier Repair: 10% Colloidal Oatmeal + 3% Ceramides for immediate itch relief.",
+            "National Eczema Association Seal: Submitted for dermatologist sensitive skin validation."
+        ],
+        timeline: [
+            "Months 1-2: Deodorized shea butter sourcing and formulation trials.",
+            "Months 3-4: 50-subject patch test on eczema and allergy sufferers.",
+            "Month 5: Cleanroom production run and airless tub packaging.",
+            "Month 6: Launch with sensitive skin advocacy groups."
+        ]
+    },
+    {
+        id: "grooming_travel_pack",
+        title: "TSA-Ready Solid Serum Stick",
+        category: "Men's Grooming",
+        unmetNeed: "travel_size_demand",
+        competitor: "Bombay Shaving Co",
+        conceptName: "TSA-Ready Solid Serum & Wash Stick",
+        painPoint: "Bombay Shaving Co customers complain about bulky, leaking liquid bottles in gym bags and during flight travel.",
+        objective: "Formulate a solid-state serum and cleanser stick that is leak-proof, TSA-friendly, and gym-bag portable.",
+        specs: [
+            "Solid-State Formulation: Waterless twist-up stick that cannot spill or leak in bags.",
+            "TSA Approved: 50g solid stick equivalent to 150ml liquid serum (lasts 60 days).",
+            "Multi-Use Formula: Cleanses, hydrates, and calms razor burn in one twist application.",
+            "Durable Shell: Recycled aluminum protective casing resistant to crushing."
+        ],
+        timeline: [
+            "Months 1-2: Waterless solid-stick extrusion trial and melting point testing at 45°C.",
+            "Month 3: Aluminum twist-up case design and leak-proof seal verification.",
+            "Months 4-5: Gym bag durability and flight pressure simulation testing.",
+            "Month 6: Launch aimed at frequent travelers and fitness enthusiasts."
+        ]
     }
 ];
 
@@ -280,45 +500,74 @@ function getRankedNeeds() {
         });
     });
 
-    const wFreq = state.weights.freq;
-    const wSev = state.weights.severity;
-    const wVal = state.weights.val;
+    const needsKeys = Object.keys(unmetNeedsStats);
+    if (needsKeys.length === 0) return [];
 
-    // Map stats to array with opportunity scores
-    const ranked = Object.keys(unmetNeedsStats).map(need => {
+    // Calculate raw metrics for each need
+    const rawMetrics = needsKeys.map(need => {
         const stats = unmetNeedsStats[need];
         const count = stats.count;
         const avgRating = stats.ratings.reduce((a, b) => a + b, 0) / stats.ratings.length;
         const avgHelpful = stats.helpfulVotes.reduce((a, b) => a + b, 0) / stats.helpfulVotes.length;
         const totalHelpful = stats.helpfulVotes.reduce((a, b) => a + b, 0);
-
-        // Frustration is 6 - average rating (so lower rating = higher frustration, max 5)
-        const frustration = 6 - avgRating;
-
-        // Opportunity Score formula utilizing exponential weight parameters
-        // Math.pow ensures that if a weight is 0, factor^0 = 1 (ignoring it), while weight=1 is linear, and >1 is amplified
-        const score = Math.pow(count, wFreq) * Math.pow(frustration, wSev) * Math.pow(1 + avgHelpful, wVal);
+        const frustration = 6 - avgRating; // lower rating = higher frustration
 
         return {
-            need: need,
-            name: UNMET_NEEDS_INFO[need].name,
-            desc: UNMET_NEEDS_INFO[need].desc,
-            count: count,
-            avgRating: parseFloat(avgRating.toFixed(2)),
-            avgHelpful: parseFloat(avgHelpful.toFixed(1)),
-            totalHelpful: totalHelpful,
-            frustration: parseFloat(frustration.toFixed(2)),
-            rawScore: score,
-            brands: stats.brands,
-            categories: stats.categories
+            need,
+            stats,
+            count,
+            avgRating,
+            avgHelpful,
+            totalHelpful,
+            frustration
         };
     });
 
-    // Find max score to normalize opportunity index (0-100 scale)
-    const maxRawScore = Math.max(...ranked.map(r => r.rawScore), 1);
-    
+    // Min and max across dataset for relative normalization
+    const maxCount = Math.max(...rawMetrics.map(m => m.count), 1);
+    const minCount = Math.min(...rawMetrics.map(m => m.count), 0);
+
+    const maxFrust = Math.max(...rawMetrics.map(m => m.frustration), 1);
+    const minFrust = Math.min(...rawMetrics.map(m => m.frustration), 0);
+
+    const maxHelpful = Math.max(...rawMetrics.map(m => m.avgHelpful), 1);
+    const minHelpful = Math.min(...rawMetrics.map(m => m.avgHelpful), 0);
+
+    const wFreq = state.weights.freq;
+    const wSev = state.weights.severity;
+    const wVal = state.weights.val;
+
+    // Calculate normalized opportunity score for each need
+    const ranked = rawMetrics.map(m => {
+        // Relative normalization to 0.1 - 1.0 range ensures equal scale for all 3 dimensions
+        const normCount = 0.1 + 0.9 * ((m.count - minCount) / (maxCount - minCount || 1));
+        const normFrust = 0.1 + 0.9 * ((m.frustration - minFrust) / (maxFrust - minFrust || 1));
+        const normHelpful = 0.1 + 0.9 * ((m.avgHelpful - minHelpful) / (maxHelpful - minHelpful || 1));
+
+        // Score formula using normalized inputs
+        const score = Math.pow(normCount, wFreq) * Math.pow(normFrust, wSev) * Math.pow(normHelpful, wVal);
+
+        return {
+            need: m.need,
+            name: UNMET_NEEDS_INFO[m.need].name,
+            desc: UNMET_NEEDS_INFO[m.need].desc,
+            count: m.count,
+            avgRating: parseFloat(m.avgRating.toFixed(2)),
+            avgHelpful: parseFloat(m.avgHelpful.toFixed(1)),
+            totalHelpful: m.totalHelpful,
+            frustration: parseFloat(m.frustration.toFixed(2)),
+            rawScore: score,
+            brands: m.stats.brands,
+            categories: m.stats.categories
+        };
+    });
+
+    // Normalize final Opportunity Index to 30 - 99 scale for user display
+    const maxRawScore = Math.max(...ranked.map(r => r.rawScore), 0.0001);
+    const minRawScore = Math.min(...ranked.map(r => r.rawScore), 0);
+
     ranked.forEach(r => {
-        r.opportunityIndex = Math.round((r.rawScore / maxRawScore) * 100);
+        r.opportunityIndex = Math.round(35 + 64 * ((r.rawScore - minRawScore) / (maxRawScore - minRawScore || 1)));
     });
 
     // Sort descending by raw opportunity score
@@ -528,16 +777,19 @@ function initSliders() {
     const lblSev = document.getElementById('val-weight-severity');
     const lblVal = document.getElementById('val-weight-val');
 
-    const resetBtn = document.getElementById('reset-weights-btn');
+    const toggleAdvBtn = document.getElementById('toggle-advanced-sliders-btn');
+    const advSlidersBox = document.getElementById('advanced-sliders-box');
+
+    const presetBtns = document.querySelectorAll('.preset-btn');
 
     function updateWeights() {
-        state.weights.freq = parseFloat(slideFreq.value);
-        state.weights.severity = parseFloat(slideSev.value);
-        state.weights.val = parseFloat(slideVal.value);
+        if (slideFreq) state.weights.freq = parseFloat(slideFreq.value);
+        if (slideSev) state.weights.severity = parseFloat(slideSev.value);
+        if (slideVal) state.weights.val = parseFloat(slideVal.value);
 
-        lblFreq.innerText = state.weights.freq.toFixed(1);
-        lblSev.innerText = state.weights.severity.toFixed(1);
-        lblVal.innerText = state.weights.val.toFixed(1);
+        if (lblFreq) lblFreq.innerText = state.weights.freq.toFixed(1);
+        if (lblSev) lblSev.innerText = state.weights.severity.toFixed(1);
+        if (lblVal) lblVal.innerText = state.weights.val.toFixed(1);
 
         // Re-render active tab content
         if (state.activeTab === 'overview') {
@@ -550,15 +802,40 @@ function initSliders() {
     }
 
     [slideFreq, slideSev, slideVal].forEach(slider => {
-        slider.addEventListener('input', updateWeights);
+        if (slider) {
+            slider.addEventListener('input', () => {
+                presetBtns.forEach(btn => btn.classList.remove('active'));
+                updateWeights();
+            });
+        }
     });
 
-    resetBtn.addEventListener('click', () => {
-        slideFreq.value = 1.0;
-        slideSev.value = 1.0;
-        slideVal.value = 1.0;
-        updateWeights();
+    // Handle 1-click Preset Buttons
+    presetBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            presetBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const f = btn.getAttribute('data-freq');
+            const s = btn.getAttribute('data-sev');
+            const v = btn.getAttribute('data-val');
+
+            if (slideFreq) slideFreq.value = f;
+            if (slideSev) slideSev.value = s;
+            if (slideVal) slideVal.value = v;
+
+            updateWeights();
+        });
     });
+
+    // Toggle advanced sliders
+    if (toggleAdvBtn && advSlidersBox) {
+        toggleAdvBtn.addEventListener('click', () => {
+            const isHidden = advSlidersBox.style.display === 'none';
+            advSlidersBox.style.display = isHidden ? 'grid' : 'none';
+            toggleAdvBtn.innerText = isHidden ? '❌ Hide Sliders' : '⚙️ Custom Sliders';
+        });
+    }
 }
 
 /**
@@ -615,17 +892,23 @@ function renderOverview() {
         card.innerHTML = `
             <div class="need-header">
                 <span class="need-rank-tag">RANK ${idx + 1}</span>
-                <span class="need-score-value">Index: ${item.opportunityIndex}</span>
+                <span class="need-score-value">Priority: ${item.opportunityIndex}/100</span>
             </div>
             <div class="need-name" title="${item.name}">${item.name}</div>
             <div class="need-meta">
-                <div class="need-meta-stat">Reviews: <span>${item.count}</span></div>
+                <div class="need-meta-stat">Complaints: <span>${item.count}</span></div>
                 <div class="need-meta-stat">Avg Rating: <span>${item.avgRating}★</span></div>
             </div>
         `;
 
         card.addEventListener('click', () => {
             state.selectedNeed = item.need;
+            // Sync Tab 3 Blueprint proposal to match this selected problem
+            const matchedBp = BLUEPRINT_IDEAS.find(bp => bp.unmetNeed === item.need);
+            if (matchedBp) {
+                state.selectedBlueprintId = matchedBp.id;
+            }
+
             // Clear VoC search filter when switching needs
             document.getElementById('voc-search').value = '';
             state.vocFilters.search = '';
@@ -639,6 +922,14 @@ function renderOverview() {
 
     // Render Selected Need Detail & Charts
     renderNeedDetails(rankedNeeds.find(r => r.need === state.selectedNeed));
+
+    // Auto-scroll list to bring the highlighted active card into view
+    setTimeout(() => {
+        const activeCard = needsListContainer.querySelector('.need-card.active');
+        if (activeCard) {
+            activeCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    }, 50);
 }
 
 function renderNeedDetails(needObj) {
@@ -647,8 +938,8 @@ function renderNeedDetails(needObj) {
     if (!needObj) {
         detailPanel.innerHTML = `
             <div class="no-selection-state">
-                <h3>Select an unmet need to load analysis</h3>
-                <p>Click on any cards in the left column to inspect brand exposure, category mapping, and reviews.</p>
+                <h3>Select a customer problem to load analysis</h3>
+                <p>Click on any cards in the left column to inspect brand exposure, category mapping, and real customer reviews.</p>
             </div>
         `;
         return;
@@ -660,7 +951,7 @@ function renderNeedDetails(needObj) {
             <div class="detail-main">
                 <div class="detail-header-row">
                     <h2 class="detail-title">${needObj.name}</h2>
-                    <span class="opp-badge">Opportunity Index: ${needObj.opportunityIndex}/100</span>
+                    <span class="opp-badge">Priority Score: ${needObj.opportunityIndex}/100</span>
                 </div>
                 <p class="detail-description">${needObj.desc}</p>
                 <div class="detail-stats-grid">
@@ -670,25 +961,25 @@ function renderNeedDetails(needObj) {
                     </div>
                     <div class="detail-stat-box">
                         <span class="num" style="color: var(--status-warning)">${needObj.avgRating}★</span>
-                        <span class="label">Average Rating</span>
+                        <span class="label">Avg Competitor Rating</span>
                     </div>
                     <div class="detail-stat-box">
                         <span class="num">${needObj.totalHelpful}</span>
-                        <span class="label">Helpful Votes</span>
+                        <span class="label">Community Upvotes</span>
                     </div>
                 </div>
             </div>
             <div class="rd-quick-proposal">
                 <div class="proposal-headline">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                    R&D Concept
+                    💡 Winning Product Idea
                 </div>
                 <div class="proposal-pitch">
                     <strong>${UNMET_NEEDS_INFO[needObj.need].rdConcept}</strong>:
                     ${UNMET_NEEDS_INFO[needObj.need].rdSolution.substring(0, 115)}...
                 </div>
                 <button class="btn-primary" id="btn-view-blueprint-proposal">
-                    Go to R&D Blueprint
+                    View Full Product Brief →
                 </button>
             </div>
         </div>
@@ -880,7 +1171,7 @@ function renderVoCReviews() {
             <div class="review-footer">
                 <div class="review-helpful">
                     <svg class="review-helpful-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
-                    <span>${r.helpful_votes} helpful votes</span>
+                    <span>${r.helpful_votes} shoppers found this helpful</span>
                 </div>
                 <div class="review-tag-badges">${tagsHTML}</div>
             </div>
@@ -950,18 +1241,43 @@ function renderCategoryDeepDive() {
         const tr = document.createElement('tr');
         
         let vulnClass = 'vuln-low';
-        if (p.vulnerabilityScore > 80) vulnClass = 'vuln-high';
-        else if (p.vulnerabilityScore > 35) vulnClass = 'vuln-med';
+        let vulnText = 'Stable';
+        if (p.vulnerabilityScore > 80) { vulnClass = 'vuln-high'; vulnText = 'High Weakness'; }
+        else if (p.vulnerabilityScore > 35) { vulnClass = 'vuln-med'; vulnText = 'Moderate Issue'; }
 
         const needLabel = UNMET_NEEDS_INFO[p.primaryNeed] ? UNMET_NEEDS_INFO[p.primaryNeed].name : p.primaryNeed;
 
         tr.innerHTML = `
-            <td class="benchmark-product-cell">${p.product}</td>
+            <td class="benchmark-product-cell">
+                <a href="#" class="product-brief-link" title="Click to view solution brief for ${p.product}">
+                    ${p.product} 🚀
+                </a>
+            </td>
             <td>${p.reviewsCount}</td>
             <td class="benchmark-rating-cell">${p.avgRating}★</td>
             <td><span class="benchmark-need-tag">${needLabel}</span></td>
-            <td class="benchmark-vulnerability-cell ${vulnClass}">${p.vulnerabilityScore}</td>
+            <td class="benchmark-vulnerability-cell"><span class="${vulnClass}">${p.vulnerabilityScore}/100 (${vulnText})</span></td>
         `;
+
+        // Redirect to Tab 3 solution brief when product name is clicked
+        const link = tr.querySelector('.product-brief-link');
+        if (link) {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                const matchedBp = BLUEPRINT_IDEAS.find(bp => bp.unmetNeed === p.primaryNeed) || BLUEPRINT_IDEAS.find(bp => bp.category === state.selectedCategory);
+                if (matchedBp) {
+                    state.selectedBlueprintId = matchedBp.id;
+                }
+                if (p.primaryNeed && UNMET_NEEDS_INFO[p.primaryNeed]) {
+                    state.selectedNeed = p.primaryNeed;
+                }
+
+                // Switch to Tab 3 (New Product Solutions)
+                document.getElementById('tab-blueprint').click();
+            });
+        }
+
         tableBody.appendChild(tr);
     });
 }
@@ -993,10 +1309,10 @@ function renderRDBlueprint() {
         card.innerHTML = `
             <div class="idea-header">
                 <span class="idea-cat">${bp.category}</span>
-                <span class="idea-score">Index: ${index}</span>
+                <span class="idea-score">Priority: ${index}/100</span>
             </div>
             <div class="idea-title">${bp.title}</div>
-            <div class="idea-weakness">Targeting ${bp.competitor}'s weaknesses in <em>${UNMET_NEEDS_INFO[bp.unmetNeed].name}</em>.</div>
+            <div class="idea-weakness">Targeting ${bp.competitor}'s weak points in <em>${UNMET_NEEDS_INFO[bp.unmetNeed].name}</em>.</div>
         `;
 
         card.addEventListener('click', () => {
@@ -1008,6 +1324,14 @@ function renderRDBlueprint() {
     });
 
     renderProposalBrief(sortedBlueprints.find(bp => bp.id === state.selectedBlueprintId));
+
+    // Auto-scroll list to bring the highlighted active blueprint card into view
+    setTimeout(() => {
+        const activeCard = ideasListContainer.querySelector('.opportunity-idea-card.active');
+        if (activeCard) {
+            activeCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    }, 50);
 }
 
 function renderProposalBrief(blueprintObj) {
@@ -1016,7 +1340,7 @@ function renderProposalBrief(blueprintObj) {
     if (!blueprintObj) {
         proposalPanel.innerHTML = `
             <div class="proposal-loading">
-                <h3>Select an opportunity blueprint to generate R&D proposal</h3>
+                <h3>Select a product concept on the left to see the complete build guide</h3>
             </div>
         `;
         return;
@@ -1036,11 +1360,11 @@ function renderProposalBrief(blueprintObj) {
     proposalPanel.innerHTML = `
         <div class="proposal-header">
             <div class="proposal-title-area">
-                <span class="proposal-category-pill">${blueprintObj.category} Opportunity</span>
-                <h2>R&D Brief: ${blueprintObj.conceptName}</h2>
-                <p class="panel-desc">Launch Strategy focusing on D2C Competitor Need-Gaps</p>
+                <span class="proposal-category-pill">${blueprintObj.category} Solution</span>
+                <h2>Product Brief: ${blueprintObj.conceptName}</h2>
+                <p class="panel-desc">Step-by-step launch strategy to solve competitor gaps</p>
             </div>
-            <span class="proposal-opp-badge">Opportunity Index: ${index}/100</span>
+            <span class="proposal-opp-badge">Priority Score: ${index}/100</span>
         </div>
         
         <div class="proposal-grid">
@@ -1051,20 +1375,20 @@ function renderProposalBrief(blueprintObj) {
                 </div>
 
                 <div class="proposal-section">
-                    <h4>Competitor Pain Point Analysis</h4>
-                    <p><strong>Primary Competitor:</strong> ${blueprintObj.competitor}</p>
+                    <h4>Competitor Weakness Analysis</h4>
+                    <p><strong>Primary Competitor Failing:</strong> ${blueprintObj.competitor}</p>
                     <p>${blueprintObj.painPoint}</p>
                 </div>
 
                 <div class="proposal-section">
-                    <h4>R&D Formulation Specifications</h4>
+                    <h4>Product Formulation & Specifications</h4>
                     <ul class="bullet-list">
                         ${specsHTML}
                     </ul>
                 </div>
 
                 <div class="proposal-section">
-                    <h4>Product Launch & R&D Timeline</h4>
+                    <h4>Product Launch Roadmap & Timeline</h4>
                     <ul class="bullet-list">
                         ${timelineHTML}
                     </ul>
@@ -1076,27 +1400,27 @@ function renderProposalBrief(blueprintObj) {
                     <h4>Market Validation Metrics</h4>
                     <div class="market-justification-list">
                         <div class="justification-item">
-                            <span class="justification-label">Market Target Need:</span>
+                            <span class="justification-label">Target Customer Problem:</span>
                             <span class="justification-val" style="text-transform:capitalize">${blueprintObj.unmetNeed.replace(/_/g, ' ')}</span>
                         </div>
                         <div class="justification-item">
-                            <span class="justification-label">Competitor Complaints count:</span>
+                            <span class="justification-label">Total Customer Complaints:</span>
                             <span class="justification-val">${totalComplaints}</span>
                         </div>
                         <div class="justification-item">
-                            <span class="justification-label">Average Competitor Rating:</span>
+                            <span class="justification-label">Avg Competitor Rating:</span>
                             <span class="justification-val">${avgRating}★</span>
                         </div>
                         <div class="justification-item">
-                            <span class="justification-label">Market Validation Size:</span>
-                            <span class="justification-val vuln-high font-bold">CRITICAL NEED</span>
+                            <span class="justification-label">Market Opportunity Size:</span>
+                            <span class="justification-val vuln-high font-bold">HIGH DEMAND</span>
                         </div>
                     </div>
                 </div>
                 
                 <button class="btn-primary" style="width: 100%; justify-content: center; margin-top: 12px;" onclick="window.print()">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
-                    Print / Save R&D Brief PDF
+                    Print / Download PDF Brief
                 </button>
             </div>
         </div>
@@ -1106,6 +1430,34 @@ function renderProposalBrief(blueprintObj) {
 // Ensure function is exposed inside tab listener
 window.renderRDBlueprint = renderRDBlueprint;
 
+/**
+ * Setup Help Guide Modal
+ */
+function initGuideModal() {
+    const openBtn = document.getElementById('open-guide-btn');
+    const closeBtn = document.getElementById('close-guide-btn');
+    const gotItBtn = document.getElementById('modal-got-it-btn');
+    const modal = document.getElementById('guide-modal');
+
+    if (!modal) return;
+
+    function openModal() {
+        modal.style.display = 'flex';
+    }
+
+    function closeModal() {
+        modal.style.display = 'none';
+    }
+
+    if (openBtn) openBtn.addEventListener('click', openModal);
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (gotItBtn) gotItBtn.addEventListener('click', closeModal);
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+    });
+}
+
 // ==========================================================================
 // INITIALIZATION ON DOCUMENT LOAD
 // ==========================================================================
@@ -1113,6 +1465,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTabs();
     initSliders();
     initVoCFilters();
+    initGuideModal();
     
     // Initial renders
     renderOverview();

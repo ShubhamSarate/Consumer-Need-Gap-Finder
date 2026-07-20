@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D2C Need-Gap Intelligence Platform | R&D Decision Analytics</title>
-    <meta name="description" content="An interactive need-gap analysis dashboard that ranks unmet consumer needs by opportunity size across 15 competitor Indian D2C brands.">
+    <title>D2C Product Opportunity Finder | Simple R&D Insights</title>
+    <meta name="description" content="An easy-to-use dashboard to find unsolved customer problems and new product opportunities across 14 D2C brands.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,36 +13,76 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <!-- Ambient Background Blobs -->
+    <div class="ambient-bg" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
     <!-- App Container -->
     <div class="app-container">
         <!-- Main Header -->
         <header class="main-header">
             <div class="header-brand">
-                <div class="brand-badge">R&D INSIGHTS</div>
-                <h1 id="app-title">D2C Need-Gap Intelligence Platform</h1>
-                <p class="subtitle">Data-driven product opportunity mapping across 14 competitor Indian D2C brands (6,000 reviews)</p>
+                <div class="brand-badge-wrapper">
+                    <span class="brand-badge">PRODUCT OPPORTUNITY FINDER</span>
+                    <button class="help-btn" id="open-guide-btn" title="Click to see how this dashboard works">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        How It Works
+                    </button>
+                </div>
+                <h1 id="app-title">D2C Product Opportunity Finder</h1>
+                <p class="subtitle">Discover unsolved customer complaints across 14 Indian D2C brands (6,000 reviews) & build winning products.</p>
             </div>
             
             <!-- Global Stats Bar -->
             <div class="stats-strip" id="global-stats-strip">
-                <div class="stat-card">
+                <div class="stat-card" title="Total customer reviews evaluated across all competitor products">
                     <div class="stat-value" id="stat-reviews">6,000</div>
                     <div class="stat-label">Reviews Analyzed</div>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card" title="Top Indian Direct-to-Consumer brands tracked">
                     <div class="stat-value" id="stat-brands">14</div>
                     <div class="stat-label">Brands Tracked</div>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card" title="Major unsolved customer complaints identified">
                     <div class="stat-value" id="stat-needs">15</div>
-                    <div class="stat-label">Unmet Needs</div>
+                    <div class="stat-label">Unsolved Problems</div>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card" title="Average competitor product rating (lower rating = bigger market gap for you!)">
                     <div class="stat-value" id="stat-rating">2.99★</div>
                     <div class="stat-label">Avg Comp Rating</div>
                 </div>
             </div>
         </header>
+
+        <!-- 3-Step Easy How-To Banner -->
+        <div class="guide-banner">
+            <div class="guide-step">
+                <span class="guide-num">1</span>
+                <div class="guide-text">
+                    <strong>Pick a Customer Problem</strong>
+                    <p>Click any problem in the left list to see what buyers complain about.</p>
+                </div>
+            </div>
+            <div class="guide-step-arrow">→</div>
+            <div class="guide-step">
+                <span class="guide-num">2</span>
+                <div class="guide-text">
+                    <strong>See Brand Impact & Reviews</strong>
+                    <p>Check which brands are failing and read real customer verbatims.</p>
+                </div>
+            </div>
+            <div class="guide-step-arrow">→</div>
+            <div class="guide-step">
+                <span class="guide-num">3</span>
+                <div class="guide-text">
+                    <strong>Launch Product Solutions</strong>
+                    <p>View pre-designed product ideas that solve these exact customer gaps.</p>
+                </div>
+            </div>
+        </div>
 
         <!-- Navigation Tabs and Weights Tuning Bar -->
         <div class="control-bar">
@@ -50,35 +90,53 @@
             <nav class="navigation-tabs" role="tablist">
                 <button class="tab-btn active" id="tab-overview" role="tab" aria-selected="true" aria-controls="panel-overview">
                     <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg>
-                    Market Overview
+                    📊 Top Customer Problems
                 </button>
                 <button class="tab-btn" id="tab-category" role="tab" aria-selected="false" aria-controls="panel-category">
                     <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
-                    Category Deep-Dive
+                    🏷️ Browse by Category
                 </button>
                 <button class="tab-btn" id="tab-blueprint" role="tab" aria-selected="false" aria-controls="panel-blueprint">
                     <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-                    R&D Blueprint
+                    🚀 New Product Solutions
                 </button>
             </nav>
 
-            <!-- Interactive Weights Panel -->
+            <!-- Interactive Priority Presets Bar -->
             <div class="weights-panel">
                 <div class="panel-title-container">
-                    <span class="weights-panel-title">Tune Opportunity Score Weights:</span>
-                    <button class="btn-text-only" id="reset-weights-btn">Reset Defaults</button>
+                    <span class="weights-panel-title">🎯 Sort Problems By:</span>
+                    <button class="btn-text-only" id="toggle-advanced-sliders-btn">⚙️ Custom Sliders</button>
                 </div>
-                <div class="sliders-container">
-                    <div class="slider-group">
-                        <label for="weight-freq">Frequency (Count): <span class="weight-val" id="val-weight-freq">1.0</span></label>
+                
+                <!-- Easy 1-Click Preset Buttons for Non-Tech Users -->
+                <div class="preset-buttons-group">
+                    <button class="preset-btn active" id="preset-balanced" data-freq="1.0" data-sev="1.0" data-val="1.0" title="Considers complaint count, customer anger level, and upvotes equally">
+                        ⚖️ Balanced
+                    </button>
+                    <button class="preset-btn" id="preset-volume" data-freq="3.0" data-sev="0.0" data-val="0.0" title="Prioritizes problems with the most total customer complaints">
+                        🔥 Most Complaints
+                    </button>
+                    <button class="preset-btn" id="preset-anger" data-freq="0.0" data-sev="3.0" data-val="0.0" title="Prioritizes problems with the most negative 1-star ratings">
+                        😡 Most Angry Buyers
+                    </button>
+                    <button class="preset-btn" id="preset-upvotes" data-freq="0.0" data-sev="0.0" data-val="3.0" title="Prioritizes problems that other shoppers upvoted the most">
+                        👍 Most Upvoted
+                    </button>
+                </div>
+
+                <!-- Collapsible Custom Sliders (For Advanced Users) -->
+                <div class="sliders-container" id="advanced-sliders-box" style="display: none; margin-top: 10px;">
+                    <div class="slider-group" title="Adjust priority based on total number of complaints">
+                        <label for="weight-freq">1. Complaint Count: <span class="weight-val" id="val-weight-freq">1.0</span></label>
                         <input type="range" id="weight-freq" min="0" max="3" step="0.1" value="1.0">
                     </div>
-                    <div class="slider-group">
-                        <label for="weight-severity">Frustration (Rating): <span class="weight-val" id="val-weight-severity">1.0</span></label>
+                    <div class="slider-group" title="Adjust priority based on low star ratings / customer anger">
+                        <label for="weight-severity">2. Customer Anger: <span class="weight-val" id="val-weight-severity">1.0</span></label>
                         <input type="range" id="weight-severity" min="0" max="3" step="0.1" value="1.0">
                     </div>
-                    <div class="slider-group">
-                        <label for="weight-val">Validation (Helpful): <span class="weight-val" id="val-weight-val">1.0</span></label>
+                    <div class="slider-group" title="Adjust priority based on helpful upvotes by other shoppers">
+                        <label for="weight-val">3. Buyer Upvotes: <span class="weight-val" id="val-weight-val">1.0</span></label>
                         <input type="range" id="weight-val" min="0" max="3" step="0.1" value="1.0">
                     </div>
                 </div>
@@ -93,14 +151,14 @@
                     <!-- Left: Ranked Needs List -->
                     <aside class="ranked-needs-container card-panel">
                         <div class="panel-header">
-                            <h2>Ranked Market Need-Gaps</h2>
-                            <p class="panel-desc">Ranked by calculated Opportunity Size</p>
+                            <h2>Ranked Customer Problems</h2>
+                            <p class="panel-desc">Ranked by calculated Opportunity Priority (highest demand first)</p>
                         </div>
                         
                         <!-- Need List Scroll -->
                         <div class="need-list" id="unmet-needs-list">
                             <!-- JS Dynamic Content -->
-                            <div class="loader">Loading market need-gaps...</div>
+                            <div class="loader">Loading customer problems...</div>
                         </div>
                     </aside>
 
@@ -110,8 +168,8 @@
                         <section class="card-panel detail-card" id="detail-card-panel">
                             <!-- JS Dynamic Content -->
                             <div class="no-selection-state">
-                                <h3>Select an unmet need to load analysis</h3>
-                                <p>Click on any cards in the left column to inspect brand exposure, category mapping, and reviews.</p>
+                                <h3>Select a customer problem to view analysis</h3>
+                                <p>Click on any problem card in the left list to see brand impacts and real customer reviews.</p>
                             </div>
                         </section>
 
@@ -119,34 +177,34 @@
                         <div class="charts-row">
                             <!-- Chart 1: Brand Exposure -->
                             <div class="card-panel chart-card">
-                                <h3>Brand Impact (Complaints Count)</h3>
+                                <h3>Most Affected Competitor Brands</h3>
                                 <div class="chart-container" id="brand-exposure-chart">
                                     <!-- Custom SVG/HTML Chart -->
-                                    <div class="no-selection-state">No unmet need selected</div>
+                                    <div class="no-selection-state">No problem selected</div>
                                 </div>
                             </div>
                             
                             <!-- Chart 2: Category Distribution -->
                             <div class="card-panel chart-card">
-                                <h3>Category Distribution</h3>
+                                <h3>Category Breakup</h3>
                                 <div class="chart-container" id="category-distribution-chart">
                                     <!-- Custom SVG/HTML Chart -->
-                                    <div class="no-selection-state">No unmet need selected</div>
+                                    <div class="no-selection-state">No problem selected</div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Bottom: VoC (Voice of Customer) Verbatims -->
+                        <!-- Bottom: Voice of Customer Reviews -->
                         <section class="card-panel voc-card">
                             <div class="voc-header">
                                 <div class="voc-title-area">
-                                    <h3>Voice of Customer (VoC) Verbatims</h3>
-                                    <p class="panel-desc">Raw customer complaints containing this unmet need</p>
+                                    <h3>💬 Real Customer Reviews & Feedback</h3>
+                                    <p class="panel-desc">Actual verbatims from buyers experiencing this issue</p>
                                 </div>
                                 
                                 <!-- Filters Strip -->
                                 <div class="voc-filters">
-                                    <input type="text" id="voc-search" placeholder="Search review text...">
+                                    <input type="text" id="voc-search" placeholder="Search keywords...">
                                     
                                     <div class="select-wrapper">
                                         <select id="filter-brand">
@@ -156,11 +214,11 @@
                                     <div class="select-wrapper">
                                         <select id="filter-rating">
                                             <option value="">All Ratings</option>
-                                            <option value="1">1 Star</option>
-                                            <option value="2">2 Stars</option>
-                                            <option value="3">3 Stars</option>
-                                            <option value="4">4 Stars</option>
-                                            <option value="5">5 Stars</option>
+                                            <option value="1">1 Star Only</option>
+                                            <option value="2">2 Stars Only</option>
+                                            <option value="3">3 Stars Only</option>
+                                            <option value="4">4 Stars Only</option>
+                                            <option value="5">5 Stars Only</option>
                                         </select>
                                     </div>
                                 </div>
@@ -168,7 +226,7 @@
                             
                             <!-- Review List Scroll -->
                             <div class="reviews-list" id="voc-reviews-list">
-                                <div class="no-selection-state">No unmet need selected</div>
+                                <div class="no-selection-state">No problem selected</div>
                             </div>
                         </section>
                     </div>
@@ -195,16 +253,16 @@
                             <div class="sub-metrics-grid">
                                 <div class="sub-metric-card">
                                     <span class="sub-metric-value" id="cat-review-count">1,590</span>
-                                    <span class="sub-metric-label">Competitor Reviews</span>
+                                    <span class="sub-metric-label">Total Reviews</span>
                                 </div>
                                 <div class="sub-metric-card">
                                     <span class="sub-metric-value" id="cat-unmet-ratio">88%</span>
-                                    <span class="sub-metric-label">Reviews with Unmet Needs</span>
+                                    <span class="sub-metric-label">Unhappy Buyers</span>
                                 </div>
                             </div>
 
                             <div class="category-needs-section">
-                                <h3>Biggest Unmet Needs in this Category</h3>
+                                <h3>Biggest Unsolved Complaints in this Category</h3>
                                 <div class="category-needs-list" id="category-needs-list">
                                     <!-- JS dynamic content -->
                                 </div>
@@ -213,8 +271,8 @@
 
                         <!-- Right Panel: Competitor Product Benchmarks -->
                         <div class="card-panel category-products-panel">
-                            <h3>Competitor Products Performance Benchmarks</h3>
-                            <p class="panel-desc">Identify which specific competitor products are failing and why</p>
+                            <h3>⚠️ Weak Competitor Products to Beat</h3>
+                            <p class="panel-desc">See which competitor products have the highest customer dissatisfaction</p>
                             
                             <div class="product-benchmark-table-wrapper">
                                 <table class="benchmark-table">
@@ -223,8 +281,8 @@
                                             <th>Competitor Product</th>
                                             <th>Reviews Count</th>
                                             <th>Avg Rating</th>
-                                            <th>Primary Unmet Need</th>
-                                            <th>Vulnerability Score</th>
+                                            <th>Top Customer Complaint</th>
+                                            <th>Weakness Score</th>
                                         </tr>
                                     </thead>
                                     <tbody id="category-products-table-body">
@@ -242,8 +300,8 @@
                 <div class="blueprint-container">
                     <!-- Left: Top Opportunities List -->
                     <div class="blueprint-sidebar card-panel">
-                        <h2>Top Product Opportunities</h2>
-                        <p class="panel-desc">Derived from competitor weak points and market validation sizes</p>
+                        <h2>🚀 Product Concepts</h2>
+                        <p class="panel-desc">Ready-to-build product solutions targeting competitor gaps</p>
                         
                         <div class="opportunity-ideas-list" id="opportunity-ideas-list">
                             <!-- JS Dynamic Content -->
@@ -254,17 +312,48 @@
                     <div class="blueprint-detail card-panel" id="rd-proposal-panel">
                         <!-- JS Dynamic Proposal Content -->
                         <div class="proposal-loading">
-                            <h3>Select an opportunity blueprint to generate R&D proposal</h3>
+                            <h3>Select a product concept on the left to see the complete build guide</h3>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
 
+        <!-- Help Modal for Non-Tech Users -->
+        <div class="modal-overlay" id="guide-modal" style="display: none;">
+            <div class="modal-card">
+                <div class="modal-header">
+                    <h2>💡 Simple Dashboard Guide</h2>
+                    <button class="modal-close-btn" id="close-guide-btn">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="help-item">
+                        <h4>1. What does this dashboard do?</h4>
+                        <p>It reads 6,000 real customer reviews from 14 Indian D2C competitor brands (like Minimalist, Oziva, WOW) and finds what customers hate or feel missing. You can use these gaps to launch better products.</p>
+                    </div>
+                    <div class="help-item">
+                        <h4>2. What is an "Opportunity Priority Score"?</h4>
+                        <p>A score from 1 to 100 indicating how big the opportunity is. A higher score means many customers are angry about this issue and no competitor has solved it yet.</p>
+                    </div>
+                    <div class="help-item">
+                        <h4>3. How do I use the 3 Tabs?</h4>
+                        <ul>
+                            <li><strong>Top Customer Problems:</strong> View all 15 customer complaints ranked from highest opportunity to lowest. Click any problem to see reviews & brand impact.</li>
+                            <li><strong>Browse by Category:</strong> Filter problems by Skin Care, Hair Care, Supplements, Men's Grooming, or Body Care.</li>
+                            <li><strong>New Product Solutions:</strong> View step-by-step product specifications, formulas, and launch timelines to solve these gaps.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-primary" id="modal-got-it-btn">Got it, let's explore!</button>
+                </div>
+            </div>
+        </div>
+
         <!-- Footer -->
         <footer class="main-footer">
-            <p>D2C Need-Gap Analysis Dashboard &copy; 2026. Made for D2C R&D and Product Teams.</p>
-            <div class="footer-meta">Source API: <code>mosaicfellowship.in/api/data/npd/reviews</code></div>
+            <p>D2C Product Opportunity Finder &copy; 2026. Created by <strong>Shubham</strong> for D2C Founders, Product Managers & R&D Teams.</p>
+            <div class="footer-meta">Source Dataset: <code>6,000 Verified D2C Reviews</code></div>
         </footer>
     </div>
 
