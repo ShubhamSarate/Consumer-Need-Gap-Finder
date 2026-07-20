@@ -1729,7 +1729,17 @@ h2 {
         margin: 0 !important;
     }
     
-    .main-header, .guide-banner, .control-bar, .main-footer, .blueprint-sidebar {
+    .ambient-bg,
+    .main-header,
+    .guide-banner,
+    .control-bar,
+    .main-footer,
+    .blueprint-sidebar,
+    .modal-overlay,
+    button,
+    .btn-primary,
+    .btn-secondary,
+    .no-print {
         display: none !important;
     }
     
@@ -1739,9 +1749,9 @@ h2 {
         page-break-inside: avoid !important;
     }
     
-    .blueprint-detail {
+    .blueprint-detail, .rd-proposal-panel {
         background: #ffffff !important;
-        border: 2px solid #0f172a !important;
+        border: 1px solid #cbd5e1 !important;
         border-radius: 8px !important;
         box-shadow: none !important;
         color: #0b0f19 !important;
